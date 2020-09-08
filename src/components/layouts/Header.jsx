@@ -18,7 +18,8 @@ export default function Header() {
         <Location>
           <P fontsize={FontSize.xs}>ALAMAT PENGANTARAN</P>
           <P onClick={() => setlocationShow(!locationShow)}>
-            Tokopedia Tower <ExpandMoreIcon style={{ fontSize: "1rem" }} />
+            Tokopedia Tower
+            <ExpandMoreIcon style={{ fontSize: "1rem", fill: "#f9423a" }} />
           </P>
         </Location>
       </HeaderContent>
