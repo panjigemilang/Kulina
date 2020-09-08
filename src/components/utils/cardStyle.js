@@ -24,6 +24,7 @@ const Content = styled.div`
     border: 0;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
     display: flex;
     font-size: 14px;
     font-weight: 600;
@@ -36,6 +37,19 @@ const Content = styled.div`
   }
 `
 
+const Score = styled.div`
+  display: flex;
+
+  div {
+    margin-left: 8px;
+
+    svg {
+      color: ${({ theme }) => theme.primary};
+      font-size: 18px;
+    }
+  }
+`
+
 const Title = styled.h3`
   font-size: ${FontSize.xl};
   margin: 8px 0px;
@@ -43,9 +57,11 @@ const Title = styled.h3`
 
 const P = styled.p`
   font-size: ${({ fontsize }) => (fontsize ? fontsize : FontSize.lg)};
-  font-weight: ${({ fontWeight }) => fontWeight};
+  font-weight: ${({ fontweight }) => fontweight};
   margin: 0;
   opacity: ${({ opacity }) => opacity};
+  position: relative;
+  z-index: -1;
 `
 
-export { CardApp, Content, Title, P }
+export { CardApp, Content, Score, Title, P }

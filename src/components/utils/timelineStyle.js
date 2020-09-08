@@ -34,6 +34,7 @@ const TimelineApp = styled.div`
 
 const P = styled.p`
   font-size: ${({ fontsize }) => fontsize};
+  font-weight: ${({ fontweight }) => fontweight};
   margin: 0;
 `
 

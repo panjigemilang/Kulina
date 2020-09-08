@@ -19,8 +19,7 @@ const HeaderContent = styled.div`
 const Location = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 8px;
-  width: 100%;
+  padding-left: 16px;
 `
 
 const P = styled.p`

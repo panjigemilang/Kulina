@@ -7,6 +7,7 @@ const Theme = {
   gray: "#6e7679",
   lightGray: "#e2e4e4",
   light: "#f1f1f2",
+  cartShadow: "linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff",
 }
 
 const FontSize = {
