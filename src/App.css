@@ -48,6 +48,17 @@ body::-webkit-scrollbar-thumb {
   background: white;
 }
 
+.App .header-container {
+  height: 9.5em;
+}
+
+.App .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
 .col-1,
 .col-2,
 .col-3,

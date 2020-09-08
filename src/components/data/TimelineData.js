@@ -1,14 +1,18 @@
+import moment from "moment"
+
 // get 2 weeks date
 const Data = []
 const days = 14
-const currentDate = new Date()
-let temp = {}
+const today = moment()
+let temp = {},
+  tomorrow
 
 for (let i = 1; i <= days; i++) {
+  tomorrow = moment(today).add(i - 1, "days")
+
   temp = {
     id: i,
-    date: currentDate.setDate(currentDate.getDate() + i),
-    active: i === 1 ? true : false,
+    date: tomorrow,
   }
 
   Data.push(temp)

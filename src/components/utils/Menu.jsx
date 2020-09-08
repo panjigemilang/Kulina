@@ -2,11 +2,11 @@ import React, { useState } from "react"
 import { Row } from "../commons"
 import { MenuApp, Button } from "./menuStyle"
 
-export default function Menu() {
+export default function Menu({ distY }) {
   const [active, setactive] = useState(1)
 
   return (
-    <MenuApp>
+    <MenuApp className={distY < 0 ? "up" : "down"}>
       <Row>
         <Button
           className={`left ${active === 1 ? "active" : null}`}

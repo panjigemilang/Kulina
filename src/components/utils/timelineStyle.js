@@ -2,24 +2,33 @@ import styled from "styled-components"
 
 const TimelineApp = styled.div`
   display: flex;
+  margin-top: 8px;
   overflow-x: scroll;
   overflow-y: hidden;
   width: 100%;
 
   button {
-    /* background-color: white; */
-    background-color: ${({ theme }) => theme.darkGray};
+    background-color: white;
     border: 0;
     border-radius: 50%;
-    color: white;
+    color: ${({ theme }) => theme.darkGray};
     cursor: pointer;
-    height: 50px;
+    height: 48px;
     margin-right: 8px;
-    width: 50px;
+    min-width: 48px;
 
-    /* &.active {
-        background
-    } */
+    &:disabled {
+      opacity: 0.2;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.active {
+      background-color: ${({ theme }) => theme.darkGray};
+      color: white;
+    }
   }
 `
 

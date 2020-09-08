@@ -1,11 +1,14 @@
 import styled from "styled-components"
 
 const HeaderApp = styled.div`
+  background-color: white;
   border-bottom: 1px ${({ theme }) => theme.lightGray} solid;
   display: flex;
   flex-direction: column;
-  padding: 16px 24px;
+  padding: 16px 24px 8px;
+  position: relative;
   width: 100%;
+  z-index: 1;
 `
 
 const HeaderContent = styled.div`
