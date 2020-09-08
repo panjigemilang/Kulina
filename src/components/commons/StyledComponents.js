@@ -9,6 +9,18 @@ const Theme = {
   light: "#f1f1f2",
 }
 
+const FontSize = {
+  xs: "8px",
+  sm: "12px",
+  md: "14px",
+  lg: "16px",
+  xl: "20px",
+}
+
+const Commons = {
+  boxShadow: "0 8px 10px 0 rgba(10, 31, 68, 0.1)",
+}
+
 const Container = styled.div`
   margin-right: auto;
   margin-left: auto;
@@ -23,8 +35,6 @@ const Row = styled.div`
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 `
 
-export { Theme, Container, Row }
+export { Theme, FontSize, Commons, Container, Row }

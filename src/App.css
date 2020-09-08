@@ -1,10 +1,24 @@
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Product Sans"),
+    url("./assets/fonts/Product-Sans-Regular.ttf") format("truetype")
+      /* Safari, Android, iOS */,
+    url("./assets/fonts/product_sans_regular-webfont.woff") format("woff")
+      /* Pretty Modern Browsers */,
+    url("./assets/fonts/product_sans_regular-webfont.woff2") format("woff2"); /* Super Modern Browsers */
+}
+
 * {
   box-sizing: border-box;
 }
 
 :root {
-  color: black;
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #424749;
+  font-family: "Product Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 13pt;
 }
 
@@ -14,7 +28,6 @@ body {
 }
 
 body {
-  font-family: "Product Sans";
   height: 100%;
   margin: 0;
   outline: none;

@@ -1,1 +1,1 @@
-export { Theme, Container, Row } from "./StyledComponents"
+export * from "./StyledComponents"
