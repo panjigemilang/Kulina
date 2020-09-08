@@ -36,7 +36,7 @@ export default function Card() {
           <P fontsize="12px" opacity=".7">
             {item.seller}
           </P>
-          <Row>
+          <Row style={{ marginTop: "24px" }}>
             <Title>Rp {item.price}</Title>
             <button onClick={() => setcartShow(!cartShow)}>
               ADD <AddIcon style={{ fontSize: "1.2rem" }} />

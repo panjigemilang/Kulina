@@ -9,6 +9,7 @@ import Home from "./components/pages/Home"
 import Header from "./components/layouts/Header"
 import Menu from "./components/utils/Menu"
 import Cart from "./components/utils/Cart"
+import Modal from "./components/utils/Modal"
 
 function App() {
   const [startY, setstartY] = useState(0)
@@ -47,6 +48,7 @@ function App() {
           </div>
           <Home setdistY={setdistY} />
           <Cart />
+          <Modal />
         </ThemeProvider>
       </Context.Provider>
     </div>

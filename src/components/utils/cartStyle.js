@@ -14,6 +14,7 @@ const CartApp = styled.div`
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
+  z-index: 5;
 
   &.show {
     bottom: 0;
@@ -44,4 +45,20 @@ const P = styled.p`
   margin: 0;
 `
 
-export { CartApp, Content, P }
+const TransparentBg = styled.div`
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
+  bottom: 0;
+  height: 5%;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+
+  &.show {
+    opacity: 0.7;
+  }
+`
+
+export { CartApp, Content, P, TransparentBg }

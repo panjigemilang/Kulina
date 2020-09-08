@@ -1,6 +1,6 @@
-import React, { useContext } from "react"
+import React, { Fragment, useContext } from "react"
 import { Context } from "../../context"
-import { CartApp, Content, P } from "./cartStyle"
+import { CartApp, Content, P, TransparentBg } from "./cartStyle"
 
 // Material-ui Icons
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart"
@@ -10,17 +10,20 @@ export default function Cart() {
   const { cartShow } = useContext(Context)
 
   return (
-    <CartApp className={cartShow ? "show" : null}>
-      <Content>
-        <div>
-          <P fontweight="900">5 Items | Rp 125.000</P>
-          <P fontsize="12px">Termasuk ongkos kirim</P>
-        </div>
-        <a role="button">
-          <ShoppingCartIcon />
-          <ChevronRightIcon />
-        </a>
-      </Content>
-    </CartApp>
+    <Fragment>
+      <CartApp className={cartShow ? "show" : null}>
+        <Content>
+          <div>
+            <P fontweight="900">5 Items | Rp 125.000</P>
+            <P fontsize="12px">Termasuk ongkos kirim</P>
+          </div>
+          <a role="button">
+            <ShoppingCartIcon />
+            <ChevronRightIcon />
+          </a>
+        </Content>
+      </CartApp>
+      <TransparentBg className={cartShow ? "show" : null} />
+    </Fragment>
   )
 }
