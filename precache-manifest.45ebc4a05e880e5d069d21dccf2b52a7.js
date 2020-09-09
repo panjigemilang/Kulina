@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "886b8f07c203f697dd30fc423a4cf98a",
+    "revision": "9d8e4c7b7a1b7409f6a145b26abea92f",
     "url": "/Kulina/index.html"
   },
   {
-    "revision": "107bd9bef0daabc65dfc",
+    "revision": "b85ea807a4013368c703",
     "url": "/Kulina/static/css/main.d9e50f32.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Kulina/static/js/2.c8d79b9c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "107bd9bef0daabc65dfc",
-    "url": "/Kulina/static/js/main.3a01b887.chunk.js"
+    "revision": "b85ea807a4013368c703",
+    "url": "/Kulina/static/js/main.1f882a70.chunk.js"
   },
   {
     "revision": "fbb9f36240c529d7bacf",
